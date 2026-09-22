@@ -1,0 +1,10 @@
+{
+  "name": "scaffolding-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node preview.mjs",
+    "start": "node preview.mjs"
+  }
+}
