@@ -1,20 +1,43 @@
 # Scaffolding website
 
-A responsive static website concept using charcoal, safety yellow and architectural grids. Open dist/index.html directly, or run `node preview.mjs` and visit http://localhost:4173.
+## Open the website
 
-## Replace before public launch
+Double-click index.html in the main folder. Or run npm run dev and open the Local address it prints. No installation is required.
 
-- Replace “Your Company” and logo placeholders with the approved company identity.
-- Add project photography to the three image slots in dist/index.html. Keep the existing containers and use images with descriptive alt text, width:100%, height:100%, object-fit:cover. Remove the placeholder labels and centre content.
-- Replace sample project headings with genuine project titles and details.
-- Confirm the services and approach copy with the company.
-- Add verified phone, email, service area and company registration details. Contact details are deliberately placeholders; no enquiries are collected or sent.
-- Set the page title and description to the real company details. Replace the concept favicon if desired.
+## Folder guide
 
-Files: dist/index.html (content), dist/styles.css (base design), dist/interactions.css (interactive styling), dist/script.js (interaction behaviour). Fonts are loaded from Google Fonts, with local fallbacks. No framework or installation required.
+Scaffolding/
+  index.html                 Shortcut to open the website
+  package.json               Local startup commands
+  preview.mjs                Local preview server
+  public/                    Website files; publish this folder
+    index.html               Page text and sections
+    assets/
+      images/
+        logos/               Company logo files
+        hero/                Main showcase photos (residential, commercial, specialist)
+        projects/            Photos for the project gallery
+      css/
+        styles.css           Colours, typography and layout
+        interactions.css     Animation and interactive styling
+      js/
+        site-config.js       Set image filenames and descriptions here
+        script.js            Navigation, gallery and animation
+        images.js            Loads supplied images, keeps placeholders if unavailable
 
-## Interactive experience
+## Add the company images
 
-The hero lets visitors switch between residential, commercial and specialist showcases. It also responds subtly to pointer movement. Services update a visual panel, the project gallery supports touch scrolling and previous/next controls, and sections reveal as visitors scroll. A sticky navigation bar shows reading progress and the current section. The closing headline fills as it enters view.
+1. Copy the logo into public/assets/images/logos/. SVG or transparent PNG works well.
+2. Put main showcase photos in public/assets/images/hero/ and gallery photos in public/assets/images/projects/.
+3. Open public/assets/js/site-config.js. Enter each image path in its empty src field, following the examples there. Paths start with assets/, not public/.
+4. Replace the alt descriptions with a short, accurate description of each image. Refresh the website.
 
-Visitors can pause motion. Operating-system reduced-motion preferences are respected, and all controls work with a keyboard. No autoplay video or company photography is assumed. Hero copy for each service is in the scenes array in dist/script.js; add the corresponding real imagery when supplied.
+Example: { src: 'assets/images/hero/residential.webp', alt: 'Scaffolding around a two-storey home' }
+
+Empty paths keep the existing placeholders. Adding a file alone does not activate it: set its path in site-config.js. Use lowercase filenames with hyphens. Prefer landscape photos at least 1600 pixels wide for the hero and 1200 pixels for projects; optimised WebP or JPEG is ideal. Avoid putting private documents inside public/.
+
+## Replace the previous folder layout
+
+This version replaces the old dist layout. Close any old preview, then extract these files into the Scaffolding folder and replace matching files. The old dist directory is no longer used; after checking the new version, you can remove it. Keep .git and .gitattributes. Do not put this folder inside another Scaffolding-Website folder.
+
+Company name, contact details, service claims and project descriptions still need your approved content before public launch.

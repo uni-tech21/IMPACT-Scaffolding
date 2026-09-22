@@ -50,3 +50,8 @@ nav a[aria-current="location"]{color:var(--accent)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal-ready{opacity:1;transform:none}.hero-image{transform:rotate(-3deg)}.contact h2>span{background:none;color:var(--ink)}}
 .motion-paused .hero-copy h1,.motion-paused .hero-bottom{animation:none;opacity:1;transform:none}
 @media(max-width:760px){.hero-image .placeholder-center{inset:16% 8% 28%;gap:10px}.hero-image .photo-icon{display:none}.hero-image .placeholder-center small{max-width:230px;font-size:12px}.hero-image .yellow-tag{bottom:16px;padding:10px 13px;font-size:17px}.hero-image .image-bottom{bottom:20px;right:42%;line-height:1.5}.hero-image .image-bottom>span:last-child{display:none}}
+
+/* Supplied photography replaces only the placeholder content. */
+.asset-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.has-photo .placeholder-center,.has-photo .image-corner,.has-photo .image-bottom{visibility:hidden}
+.logo-slot{position:relative}.logo-slot.has-photo{color:transparent;border-color:transparent}.logo-slot .asset-photo{object-fit:contain}

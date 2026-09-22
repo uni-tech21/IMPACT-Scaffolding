@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const root = fileURLToPath(new URL('./dist/', import.meta.url));
+const root = fileURLToPath(new URL('./public/', import.meta.url));
 const portArgument = process.argv.indexOf('--port');
 const requestedPort = Number(portArgument >= 0 ? process.argv[portArgument + 1] : process.env.PORT || 4173);
 if (!Number.isInteger(requestedPort) || requestedPort < 1 || requestedPort > 65535) {
