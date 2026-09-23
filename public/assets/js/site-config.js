@@ -3,12 +3,19 @@
 window.SITE_ASSETS = {
   logo: { src: '', alt: 'Company logo' },
   hero: [
-    { src: '', alt: 'Residential scaffolding project' }, // assets/images/hero/residential.webp
+    { src:'assets/images/hero/residential.jpg', alt: 'Residential scaffolding' }, // assets/images/hero/residential.webp
     { src: '', alt: 'Commercial scaffolding project' },  // assets/images/hero/commercial.webp
     { src: '', alt: 'Specialist scaffolding project' }   // assets/images/hero/specialist.webp
   ],
+  // Photos in the left-hand WHAT WE DO panel. Replace these files to change them.
+  services: [
+    { src: 'assets/images/services/residential.jpg', alt: 'Residential scaffolding' },
+    { src: 'assets/images/services/commercial.jpg', alt: 'Commercial scaffolding' },
+    { src: 'assets/images/services/specialist-access.jpg', alt: 'Specialist access scaffolding' },
+    { src: 'assets/images/services/temporary-roofs.jpg', alt: 'Temporary roof scaffolding' }
+  ],
   projects: [
-    { src: '', alt: 'Residential project' }, // assets/images/projects/residential.webp
-    { src: '', alt: 'Commercial project' }  // assets/images/projects/commercial.webp
+    { src: 'assets/images/projects/residential-scaffolding.jpg', alt: 'Residential scaffolding project' }, // assets/images/projects/residential-scaffolding.jpg
+    { src: 'assets/images/projects/commercial-scaffolding-4.jpg', alt: 'Commercial scaffolding project' }  // assets/images/projects/commercial.webp
   ]
 };

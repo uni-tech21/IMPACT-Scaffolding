@@ -58,7 +58,7 @@ serviceExperience.className = 'service-experience';
 serviceList.before(serviceExperience);
 const servicePreview = document.createElement('div');
 servicePreview.className = 'service-preview';
-servicePreview.setAttribute('aria-hidden', 'true');
+servicePreview.dataset.service = '0';
 servicePreview.innerHTML = '<span class="service-preview-label">THE RIGHT SUPPORT / EVERY TIME</span><span class="service-preview-number">01</span><h3>Residential scaffolding</h3><p>HOMES / EXTENSIONS / RENOVATIONS</p>';
 serviceExperience.append(servicePreview, serviceList);
 const services = [...serviceList.querySelectorAll('details')];
@@ -68,6 +68,7 @@ services.forEach((detail, index) => detail.addEventListener('toggle', () => {
   servicePreview.querySelector('.service-preview-number').textContent = `0${index + 1}`;
   servicePreview.querySelector('h3').textContent = detail.querySelector('h3').textContent;
   servicePreview.querySelector('p').textContent = detail.querySelector('.service-detail > span').textContent;
+  servicePreview.dataset.service = String(index);
 }));
 
 const gallery = document.querySelector('.project-grid');

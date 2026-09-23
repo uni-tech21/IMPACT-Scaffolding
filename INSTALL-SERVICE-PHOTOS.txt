@@ -1,0 +1,3 @@
+Extract the public folder from this update into C:\Users\paris\OneDrive\Documents\GitHub\Scaffolding and replace matching files. Your existing gallery image settings are preserved.
+Refresh the website. Each of the four services now has a photo slot in the left-hand panel.
+Add specialist-access.jpg and temporary-roofs.jpg to public/assets/images/services/. The residential and commercial photos are already included.

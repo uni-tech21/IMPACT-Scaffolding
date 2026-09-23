@@ -55,3 +55,10 @@ nav a[aria-current="location"]{color:var(--accent)}
 .asset-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
 .has-photo .placeholder-center,.has-photo .image-corner,.has-photo .image-bottom{visibility:hidden}
 .logo-slot{position:relative}.logo-slot.has-photo{color:transparent;border-color:transparent}.logo-slot .asset-photo{object-fit:contain}
+
+/* Service photos fill the selected service panel; labels stay readable above them. */
+.service-preview .asset-photo{z-index:0;animation:scene-in .4s ease-out}
+.service-preview.has-photo::before{z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.08) 32%,rgba(0,0,0,.85));transform:none}
+.service-preview.has-photo .service-preview-number{visibility:hidden}
+.service-preview.has-photo h3,.service-preview.has-photo p,.service-preview.has-photo .service-preview-label{position:relative;z-index:2}
+.service-preview.has-photo p,.service-preview.has-photo .service-preview-label{color:#fff}

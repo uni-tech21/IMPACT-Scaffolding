@@ -1,10 +1,13 @@
 // Preserve the designed placeholders until a configured image has loaded successfully.
 (() => {
   const assets = window.SITE_ASSETS || {};
+  const imageRequests = new WeakMap();
   const hero = document.querySelector('.hero-image');
   function applyImage(container, asset, logo = false) {
     if (!container) return;
     const source = asset?.src || '';
+    const request = {};
+    imageRequests.set(container, request);
     container.dataset.assetSource = source;
     container.querySelector('.asset-photo')?.remove();
     container.classList.remove('has-photo');
@@ -14,7 +17,7 @@
     picture.alt = asset.alt || '';
     picture.decoding = 'async';
     picture.onload = () => {
-      if (container.dataset.assetSource !== source) return;
+      if (imageRequests.get(container) !== request) return;
       container.querySelector('.asset-photo')?.remove();
       container.append(picture);
       container.classList.add('has-photo');
@@ -25,6 +28,12 @@
   }
   document.querySelectorAll('.logo-slot').forEach(slot => applyImage(slot, assets.logo, true));
   document.querySelectorAll('.project-image').forEach((slot, i) => applyImage(slot, assets.projects?.[i]));
+  const servicePanel = document.querySelector('.service-preview');
+  if (servicePanel) {
+    const updateService = () => applyImage(servicePanel, assets.services?.[Number(servicePanel.dataset.service || 0)]);
+    updateService();
+    new MutationObserver(updateService).observe(servicePanel, { attributes: true, attributeFilter: ['data-service'] });
+  }
   const updateHero = () => applyImage(hero, assets.hero?.[Number(hero.dataset.scene || 0)]);
   if (hero) {
     updateHero();
