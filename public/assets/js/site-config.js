@@ -1,7 +1,7 @@
 // Image paths are relative to public/index.html. Leave a path empty to keep its placeholder.
 // Example: logo: { src: 'assets/images/logos/company-logo.svg', alt: 'Your company name' }
 window.SITE_ASSETS = {
-  logo: { src: '', alt: 'Company logo' },
+  logo: { src: 'assets/images/logos/logo.jpg', alt: 'Logo' } ,
   hero: [
     { src:'assets/images/hero/residential.jpg', alt: 'Residential scaffolding' }, // assets/images/hero/residential.webp
     { src: '', alt: 'Commercial scaffolding project' },  // assets/images/hero/commercial.webp
