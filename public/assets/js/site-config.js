@@ -4,8 +4,8 @@ window.SITE_ASSETS = {
   logo: { src: 'assets/images/logos/logo.jpg', alt: 'Logo' } ,
   hero: [
     { src:'assets/images/hero/residential.jpg', alt: 'Residential scaffolding' }, // assets/images/hero/residential.webp
-    { src: '', alt: 'Commercial scaffolding project' },  // assets/images/hero/commercial.webp
-    { src: '', alt: 'Specialist scaffolding project' }   // assets/images/hero/specialist.webp
+    { src:'assets/images/hero/commercial.jpg', alt: 'Commercial scaffolding' },  // assets/images/hero/commercial.webp
+    { src: 'assets/images/hero/specialist.jpg', alt: 'Specialist scaffolding project' }   // assets/images/hero/specialist.webp
   ],
   // Photos in the left-hand WHAT WE DO panel. Replace these files to change them.
   services: [
