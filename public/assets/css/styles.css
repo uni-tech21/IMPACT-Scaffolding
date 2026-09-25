@@ -284,40 +284,6 @@ nav a:hover {
 .hero-stamp strong {
     color:var(--accent)
 }
-.showcase-controls {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 5%;
-    border-top:1px solid #ffffff30
-}
-.showcase-options {
-    display:flex
-}
-.showcase-option {
-    border:0;
-    border-bottom:3px solid transparent;
-    background:none;
-    color:#b6c6d7;
-    padding:21px 25px;
-    font-size:13px
-}
-.showcase-option:first-child {
-    padding-left:0
-}
-.showcase-option span {
-    font-size:10px;
-    margin-right:12px;
-    color:#9bafc3
-}
-.showcase-option.is-selected {
-    border-color:var(--accent);
-    color:white
-}
-.scene-description {
-    font-size:10px;
-    letter-spacing:.12em
-}
 .section {
     padding:64px 5%
 }
@@ -634,9 +600,6 @@ footer>a:last-child {
     padding-left:18px;
     gap:12px
 }
-.scene-description {
-    font-size:9px
-}
 
 }
 
@@ -704,19 +667,6 @@ footer>a:last-child {
 }
 .hero-buttons .button {
     padding:15px 18px
-}
-.showcase-controls {
-    padding:0 6%
-}
-.showcase-options {
-    width:100%;
-    justify-content:space-between
-}
-.showcase-option {
-    padding:20px 12px
-}
-.scene-description {
-    display:none
 }
 .section {
     padding:45px 6%

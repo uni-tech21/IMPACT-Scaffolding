@@ -5,10 +5,6 @@ menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('ari
 navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&navigation.classList.contains('is-open')){closeMenu();menuButton.focus();}});
 matchMedia('(min-width:801px)').addEventListener('change',event=>{if(event.matches)closeMenu();});
-const descriptions=['SCAFFOLDING FOR REPAIRS AND RENOVATIONS','ACCESS FOR COMMERCIAL BUILDING WORK','HELP WITH AWKWARD OR UNUSUAL ACCESS'];
-const heroImage=document.querySelector('.hero-image');
-const sceneButtons=[...document.querySelectorAll('.showcase-option')];
-sceneButtons.forEach((button,index)=>button.addEventListener('click',()=>{sceneButtons.forEach((item,i)=>{item.classList.toggle('is-selected',i===index);item.setAttribute('aria-pressed',String(i===index));});heroImage.dataset.scene=String(index);heroImage.classList.add('scene-change');document.querySelector('.scene-description').textContent=descriptions[index];}));
 const gallery=document.querySelector('.project-grid');
 const previous=document.querySelector('.gallery-previous');
 const next=document.querySelector('.gallery-next');

@@ -18,18 +18,7 @@
 .service-symbol {
     transition:transform .2s
 }
-.scene-change .asset-photo {
-    animation:scene-in .35s ease-out
-}
-@keyframes scene-in {
-    from {
-    opacity:.3
-}
-to {
-    opacity:1
-}
 
-}
 @media(prefers-reduced-motion:reduce) {
     html {
     scroll-behavior:auto

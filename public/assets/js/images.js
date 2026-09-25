@@ -29,9 +29,5 @@
   document.querySelectorAll('.logo-slot').forEach(slot => applyImage(slot, assets.logo, true));
   document.querySelectorAll('.project-image').forEach((slot, i) => applyImage(slot, assets.projects?.[i]));
   document.querySelectorAll('.service-photo').forEach(slot => applyImage(slot, assets.services?.[Number(slot.dataset.service)]));
-  const updateHero = () => applyImage(hero, assets.hero?.[Number(hero.dataset.scene || 0)]);
-  if (hero) {
-    updateHero();
-    new MutationObserver(updateHero).observe(hero, {attributes:true, attributeFilter:['data-scene']});
-  }
+  applyImage(hero, assets.hero?.[0]);
 })();
