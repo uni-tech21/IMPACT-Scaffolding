@@ -2,7 +2,7 @@
 .header{position:sticky;top:0;background:#141615ed;backdrop-filter:blur(18px)}
 .header::after{content:'';position:absolute;bottom:-1px;left:0;height:3px;width:100%;background:var(--accent);transform:scaleX(var(--page-progress,0));transform-origin:left;pointer-events:none}
 nav a[aria-current="location"]{color:var(--accent)}
-.hero{position:relative;background:radial-gradient(ellipse at var(--light-x,80%) var(--light-y,30%),#fcca0210,transparent 58%)}
+.hero{position:relative;background:radial-gradient(ellipse at var(--light-x,80%) var(--light-y,30%),#c038ff10,transparent 58%)}
 .hero-content{perspective:1200px}
 .hero-image{transform:translateY(var(--hero-shift,0px)) rotate(-3deg) rotateX(var(--tilt-y,0deg)) rotateY(var(--tilt-x,0deg));transition:transform .4s ease-out,background-color .7s,border-color .7s;will-change:transform}
 .hero-image[data-scene="1"]{background-color:#303c3b;border-color:#8eabaa;background-size:72px 72px}
@@ -24,11 +24,11 @@ nav a[aria-current="location"]{color:var(--accent)}
 .motion-toggle:hover{color:var(--accent)}
 .service-experience{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}
 .service-preview{position:sticky;top:130px;background:var(--ink);color:var(--paper);padding:30px;min-height:450px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
-.service-preview::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#fcca020c 1px,transparent 1px),linear-gradient(90deg,#fcca020c 1px,transparent 1px);background-size:44px 44px;transition:transform .7s}
+.service-preview::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#c038ff0c 1px,transparent 1px),linear-gradient(90deg,#c038ff0c 1px,transparent 1px);background-size:44px 44px;transition:transform .7s}
 .service-preview:hover::before{transform:scale(1.07)}
 .service-preview-label{font-size:12px;letter-spacing:.1em;color:#bbc3a7;z-index:1}
 .service-preview-number{font:800 clamp(130px,16vw,240px)/.9 var(--display);color:transparent;-webkit-text-stroke:1px #748348;letter-spacing:-.03em;z-index:1;transition:color .4s}
-.service-preview:hover .service-preview-number{color:#fcca0218}
+.service-preview:hover .service-preview-number{color:#c038ff18}
 .service-preview h3{font:600 38px/1 var(--display);color:var(--accent);max-width:320px;z-index:1}
 .service-preview p{font-size:13px;line-height:1.6;color:#bbc3a7;margin-top:15px;z-index:1}
 .service-list summary{transition:padding .25s,color .25s}.service-list summary:hover{padding-left:8px;color:#526309}
