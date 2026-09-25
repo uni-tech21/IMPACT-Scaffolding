@@ -28,12 +28,7 @@
   }
   document.querySelectorAll('.logo-slot').forEach(slot => applyImage(slot, assets.logo, true));
   document.querySelectorAll('.project-image').forEach((slot, i) => applyImage(slot, assets.projects?.[i]));
-  const servicePanel = document.querySelector('.service-preview');
-  if (servicePanel) {
-    const updateService = () => applyImage(servicePanel, assets.services?.[Number(servicePanel.dataset.service || 0)]);
-    updateService();
-    new MutationObserver(updateService).observe(servicePanel, { attributes: true, attributeFilter: ['data-service'] });
-  }
+  document.querySelectorAll('.service-photo').forEach(slot => applyImage(slot, assets.services?.[Number(slot.dataset.service)]));
   const updateHero = () => applyImage(hero, assets.hero?.[Number(hero.dataset.scene || 0)]);
   if (hero) {
     updateHero();

@@ -22,7 +22,7 @@ Scaffolding/
         interactions.css     Animation and interactive styling
       js/
         site-config.js       Set image filenames and descriptions here
-        script.js            Navigation, gallery and animation
+        script.js            Navigation, hero selection and gallery
         images.js            Loads supplied images, keeps placeholders if unavailable
 
 ## Add the company images
@@ -40,4 +40,6 @@ Empty paths keep the existing placeholders. Adding a file alone does not activat
 
 This version replaces the old dist layout. Close any old preview, then extract these files into the Scaffolding folder and replace matching files. The old dist directory is no longer used; after checking the new version, you can remove it. Keep .git and .gitattributes. Do not put this folder inside another Scaffolding-Website folder.
 
-Company name, contact details, service claims and project descriptions still need your approved content before public launch.
+The current design blends the original bold typography and project gallery with a navy, white and pink palette, split hero, photo service cards and a trust strip. Service cards expand to show more detail. Quote buttons lead to the phone and email contact section.
+
+Company contact details and service claims should be verified before public launch.
