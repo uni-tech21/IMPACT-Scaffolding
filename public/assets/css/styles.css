@@ -236,6 +236,9 @@ nav a:hover {
 .hero-image .asset-photo {
     object-position:55% center
 }
+.project:nth-child(4) .asset-photo {
+    object-position:center 20%
+}
 .placeholder-center {
     position:absolute;
     inset:20%;

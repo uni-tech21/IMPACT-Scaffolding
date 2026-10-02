@@ -11,11 +11,13 @@ window.SITE_ASSETS = {
   services: [
     { src: 'assets/images/services/residential.jpg', alt: 'Residential scaffolding' },
     { src: 'assets/images/services/commercial.jpg', alt: 'Commercial scaffolding' },
-    { src: 'assets/images/services/specialist-access.jpg', alt: 'Specialist access scaffolding' },
+    { src: 'assets/images/services/specialist-access.jpg', alt: 'All access scaffolding' },
     { src: 'assets/images/services/temporary-roofs.jpg', alt: 'Temporary roof scaffolding' }
   ],
   projects: [
     { src: 'assets/images/projects/residential-scaffolding.jpg', alt: 'Residential scaffolding project' }, // assets/images/projects/residential-scaffolding.jpg
-    { src: 'assets/images/projects/commercial-scaffolding-4.jpg', alt: 'Commercial scaffolding project' }  // assets/images/projects/commercial.webp
+    { src: 'assets/images/projects/commercial-scaffolding-4.jpg', alt: 'Commercial scaffolding project' },  // assets/images/projects/commercial.webp
+    { src: 'assets/images/projects/sitework-scaffolding.jpg', alt: 'Site work scaffolding project' },
+    { src: 'assets/images/projects/specialist-access.jpg', alt: 'Specialist access scaffolding project' }   // assets/images/projects/specialist.webp
   ]
 };
